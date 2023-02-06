@@ -110,7 +110,7 @@ func main() {
 		}
 	}
 
-	if err = os.WriteFile("../data/flash-cards.csv", []byte(str.String()), 0644); err != nil {
+	if err = os.WriteFile("./data/flash-cards.csv", []byte(str.String()), 0644); err != nil {
 		log.Fatalf("error opening file: %v", err)
 	}
 }
